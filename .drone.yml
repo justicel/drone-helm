@@ -13,7 +13,7 @@ pipeline:
     image: golang:1.10
     commands:
     - go vet
-    - go test ./... -cover -coverprofile=coverage.out
+    - go test ./... -v -cover
 
   build_linux_amd64:
     image: golang:1.10
